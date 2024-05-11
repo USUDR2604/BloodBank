@@ -1,0 +1,76 @@
+{% load static %}
+<!DOCTYPE html>
+
+<head>
+    <style>
+      body{
+        color:black;
+      }
+        .xyz{
+          margin-bottom: 0px;
+          background-image: url('{% static "image/BloodBank_MainPage.jpeg" %}');
+          background-size: cover;
+          background-repeat: no-repeat;
+          height:100vh;
+        }
+        .text-left,
+  .text-right {
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    width:70%;
+    padding:20px;
+
+
+  }
+  .text-left {
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(0,0,0,0.1);
+  }
+  .text-right {
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+      </style>
+      
+</head>
+
+
+<body>
+  {% include "blood/navbar.html" %}
+<br>
+<section id="section-jumbotron" style="margin-bottom: 0px;" class="jumbotron jumbotron-fluid d-flex justify-content-center align-items-center xyz">
+    <div class="container text-center">
+     <p class="text-right"><img src="{% static 'image/Blood_Transfusion_Donation.png' %}" class="img-fluid" width="420"/></p>
+      <div class="text-left"><p>"UniversalUnity Blood Care is a beacon of hope, uniting communities in the noble cause of blood donation. 
+        With a steadfast commitment to privacy, we ensure each patient's confidentiality is paramount. Our specialized approach prioritizes
+         not only the provision of life-saving blood but also the safeguarding of individual privacy rights. Through cutting-edge technology
+          and compassionate care, we create a secure environment where donors and recipients alike feel valued and respected. Join us in our 
+          mission to save lives, one donation at a time, with dignity and privacy assured."</p>
+        <p><button class="btn btn-secondary">GET MORE DETAILS</button></div>
+    </div>  
+  </section>
+
+
+  <div class="jumbotron" style="margin-top: 0px;margin-bottom: 0px;">
+
+    <p class="lead text-center">"Empowering Humanity, One Drop at a Time: Join Universal Unity Blood Care in the Lifesaving Journey of Blood Donation."</p>
+    
+    <p class="text-center">- Team Cloud Drivers</p>
+    
+  </div>
+  {% include "blood/footer.html" %}
+
+
+</body>
+
+</html>
+<!--
+developed By : sumit kumar
+facebook : fb.com/sumit.luv
+youtube : youtube.com/lazycoders
+-->
